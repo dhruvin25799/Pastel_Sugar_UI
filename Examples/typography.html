@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Avatar | Sugar Component Library</title>
+    <title>Typography | Sugar Component Library</title>
     <script
       src="https://kit.fontawesome.com/71f5b9ef6c.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="example_main.css" />
-    <link rel="stylesheet" href="../components.css">
+    <link rel="stylesheet" href="../components.css" />
   </head>
   <body>
     <nav>
@@ -39,9 +39,9 @@
           <ul>
             <li><h3>Examples</h3></li>
             <li><hr /></li>
-            <li><a href="./typography.html">Typography</a></li>
+            <li><a class="active" href="#">Typography</a></li>
             <li><a href="./alert.html">Alert</a></li>
-            <li><a class="active" href="#">Avatar</a></li>
+            <li><a href="./avatar.html">Avatar</a></li>
             <li><a href="./badge.html">Badge</a></li>
             <li><a href="./button.html">Button</a></li>
             <li><a href="./card.html">Card</a></li>
@@ -59,29 +59,45 @@
       <div class="example-container">
         <div class="example-text-body">
           <h1>
-            <span><i class="fas fa-user"></i></span>Avatar
+            <span><i class="fas fa-sort-alpha-up"></i></span>Typography
           </h1>
           <p>
-            An avatar can be used to show a user's profile picture on various
-            places.
+            Typography styles help you to use different header sizes,
+            line-heights wihtout tweaking the css much.
           </p>
           <p>
-            We provide you with 4 types of avatar sizes : Standard (3rem),
-            Medium (4rem), Large (6rem), X-Large (8rem).
+            We provide 5 different headers, 5 different font-weights and 5
+            different line-heights.
           </p>
         </div>
-        <div class="example-showcase flex-row-avatar">
-          <img class="avatar" src="./res/avatar.png" alt="avatar" />
-          <img class="avatar medium" src="./res/avatar.png" alt="avatar" />
-          <img class="avatar large" src="./res/avatar.png" alt="avatar" />
-          <img class="avatar xlarge" src="./res/avatar.png" alt="avatar" />
+        <div class="example-showcase">
+          <div class="container">
+            <h1 class="type1">This is an h1</h1>
+            <h2 class="type2">This is an h2</h2>
+            <h3 class="type3">This is an h3</h3>
+            <p class="type1">This is a p tag with type1</p>
+            <p class="type2">This is a p tag with type2</p>
+            <p class="type3">This is a p tag with type3</p>
+            <p class="fw-light">This is a p tag with font-weight: light</p>
+            <p class="fw-regular">This is a p tag with font-weight: regular</p>
+            <p class="fw-semibold">
+              This is a p tag with font-weight: semibold
+            </p>
+            <p class="fw-bold">This is a p tag with font-weight: bold</p>
+            <p class="fw-black">This is a p tag with font-weight: black</p>
+            <div class="container text-center">
+              <p class="text-gray fw-black">
+                Text in this div is centered and gray
+              </p>
+            </div>
+          </div>
         </div>
         <div class="carbon-iframe">
           <iframe
-            src="https://carbon.now.sh/embed/q2uirtXkqdDRXwNaKKJ7"
+            src="https://carbon.now.sh/embed/JTcbsx8NMCBzXS67yXtj"
             style="
               width: 680px;
-              height: 154px;
+              height: 214px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -90,17 +106,25 @@
           >
           </iframe>
         </div>
-        <hr class="section-divider">
+        <hr class="section-divider" />
         <div class="example-text-body">
           <h1>
-            <span><i class="fas fa-user"></i></span>Usage
+            <span><i class="fas fa-sort-alpha-up"></i></i></span>Usage
           </h1>
           <p>
-            Use the class <span class="span-code">avatar</span> on an img tag to get the avatar component.
+            Use the class <span class="span-code">type1</span> on a h1 tag or p tag to use
+            these components.
           </p>
           <p>
-            Additionally you can use classes <span class="span-code">medium</span> <span class="span-code">large</span> <span class="span-code">xlarge</span> to get different sizes.
+            Additionally use can use our extra classes
+            <span class="span-code">fw-light</span>
+            <span class="span-code">fw-regular</span>
+            <span class="span-code">fw-semibold</span>
+            <span class="span-code">fw-bold</span><br>
+            <span class="span-code">fw-black</span> to get font-weights
           </p>
+          <p>Also you can use class <span class="span-code">text-center</span> to center the text.</p>
+          <p>You can also use class <span class="span-code">text-gray</span> for gray text.</p>
         </div>
       </div>
     </div>
